@@ -1,0 +1,60 @@
+.main{
+    margin-bottom: 60px;
+}
+.banner img{
+    width: 100%;
+}
+.check{
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    display: flex;
+    @include tablet (){
+        top: 29%;
+        left: 37%;
+    }
+    & img{
+        width: 20px;
+        height: 20px;
+    }
+}
+.border{
+    width: 66px;
+    height: 10px;
+    border-bottom: 1px solid $green-dark;
+}
+.success{
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    @include tablet(){
+        top: 33%;
+        left: 37%;
+    }
+}
+.keepshopping{
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    @include tablet(){
+        width: 100%;
+        top: 52%;
+        left: 0;
+    }
+    & a{
+        text-align: center;
+        width: 300px;
+        display: block;
+        padding: 17px 0px;
+        background: #FFE180;
+        color: $green-dark;
+        font-size: $font-l;
+        @include tablet(){
+            width: 100%;
+        }
+        &:hover{
+            background: $green-dark;
+            color: #FFE180;
+        }
+    }
+}

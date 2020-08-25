@@ -1,0 +1,506 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: Microsoft JhengHei;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .footer {
+    max-width: 768px;
+  }
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 30px 0px;
+  position: relative;
+}
+
+.navbar .active {
+  max-height: 200px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0px 30px;
+  }
+}
+
+.navbar-toggler {
+  display: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navbar-toggler {
+    display: block;
+    padding: 5px;
+  }
+  .navbar-toggler:focus {
+    outline: 0;
+  }
+}
+
+.logo {
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg);
+  width: 220px;
+  height: 40px;
+  display: block;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logotype-sm-dark.svg);
+    width: 116px;
+    height: 20px;
+    margin-top: 7px;
+  }
+}
+
+.navbar-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-height: 0px;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+    overflow: hidden;
+    background: white;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.navbar-collapse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-link {
+  color: #3F5D45;
+  font-weight: bold;
+  padding: 0 30px;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .nav-link {
+    padding: 10px 0;
+    text-align: center;
+  }
+}
+
+.nav-item:hover {
+  text-decoration: underline;
+  background-color: #EAF0ED;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  .nav-item {
+    width: 100%;
+  }
+}
+
+.navbar-link {
+  padding-left: 30px;
+}
+
+@media (max-width: 768px) {
+  .navbar-link {
+    padding-left: 0;
+  }
+}
+
+.footer-email {
+  padding: 30px 122px;
+  background: #3F5D45;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 768px) {
+  .footer-email {
+    padding: 30px;
+  }
+}
+
+.email-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 768px) {
+  .email-text {
+    margin-bottom: 30px;
+  }
+}
+
+.email-text img {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
+
+.email-text p {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #EAF0ED;
+}
+
+@media (max-width: 768px) {
+  .email-text p {
+    font-size: 20px;
+  }
+}
+
+.email-enter {
+  background: #EAF0ED;
+  width: 380px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .email-enter {
+    width: 315px;
+  }
+}
+
+.email-enter img {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 16px;
+}
+
+.email-enter input {
+  background: #EAF0ED;
+  border: none;
+  width: 220px;
+  padding: 16px;
+  margin-left: 56px;
+}
+
+@media (max-width: 768px) {
+  .email-enter input {
+    width: 45%;
+  }
+}
+
+.btn {
+  width: 64px;
+  height: 56px;
+  background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/arrow_forward-24px.png?raw=true);
+  background-color: #FFE180;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  display: block;
+  cursor: pointer;
+}
+
+.footer-info {
+  background-color: #EAF0ED;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 40px 122px;
+}
+
+@media (max-width: 768px) {
+  .footer-info {
+    padding: 40px 0px 30px 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.footerLogo {
+  display: block;
+  max-width: 171px;
+  margin-bottom: 115px;
+}
+
+@media (max-width: 768px) {
+  .footerLogo {
+    margin-bottom: 40px;
+  }
+}
+
+.info-message ul {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .info-message ul {
+    margin-bottom: 37px;
+  }
+}
+
+.info-message ul li {
+  font-size: 16px;
+  line-height: 24px;
+  color: #3F5D45;
+}
+
+.footerLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  .footerLinks {
+    margin-bottom: 23px;
+  }
+}
+
+.footerLinks a {
+  display: block;
+  margin-right: 10px;
+}
+
+.footerLinks img {
+  width: 32px;
+  height: 32px;
+}
+
+.info-copyright h2 {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  font-size: 23px;
+  font-weight: bold;
+  line-height: 30px;
+  letter-spacing: 6px;
+  color: #3F5D45;
+  float: right;
+}
+
+@media (max-width: 768px) {
+  .info-copyright h2 {
+    display: none;
+  }
+}
+
+.info-copyright p {
+  color: #3F5D45;
+  clear: both;
+}
+
+.main {
+  margin-bottom: 60px;
+}
+
+.banner img {
+  width: 100%;
+}
+
+.check {
+  position: absolute;
+  top: 25%;
+  left: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .check {
+    top: 29%;
+    left: 37%;
+  }
+}
+
+.check img {
+  width: 20px;
+  height: 20px;
+}
+
+.border {
+  width: 66px;
+  height: 10px;
+  border-bottom: 1px solid #3F5D45;
+}
+
+.success {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+}
+
+@media (max-width: 768px) {
+  .success {
+    top: 33%;
+    left: 37%;
+  }
+}
+
+.keepshopping {
+  position: absolute;
+  top: 40%;
+  left: 35%;
+}
+
+@media (max-width: 768px) {
+  .keepshopping {
+    width: 100%;
+    top: 52%;
+    left: 0;
+  }
+}
+
+.keepshopping a {
+  text-align: center;
+  width: 300px;
+  display: block;
+  padding: 17px 0px;
+  background: #FFE180;
+  color: #3F5D45;
+  font-size: 24px;
+}
+
+@media (max-width: 768px) {
+  .keepshopping a {
+    width: 100%;
+  }
+}
+
+.keepshopping a:hover {
+  background: #3F5D45;
+  color: #FFE180;
+}
+/*# sourceMappingURL=success.css.map */
